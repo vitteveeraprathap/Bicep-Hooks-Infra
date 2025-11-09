@@ -8,7 +8,7 @@ param storageName string
 param location string = resourceGroup().location
 
 @description('SKU')
-@allowed([ 'Standard_LRS' 'Standard_GRS' 'Standard_ZRS' 'Premium_LRS' ])
+@allowed([ 'Standard_LRS', 'Standard_GRS', 'Standard_ZRS', 'Premium_LRS' ])
 param skuName string = 'Standard_LRS'
 
 @description('Kind')
